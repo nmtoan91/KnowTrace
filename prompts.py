@@ -1,4 +1,4 @@
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 
 INIT_PROMPT = """Given a question that requires multi-step retrieval to collect necessary knowledge triples and offer the final answer, you are an advanced knowledge reasoner and retrieval facilitator. In this step, you should first extract the initial topic entities for retrieving relevant knowledge, and then propose a detailed and concrete retrieval guidance for each topic entity to reflect which aspect of knowledge related to this entity you want to retrieve. Be sure to only provide the retrieval guidance for necessary knowledge. Don't overthink the entities that you don't yet know their complete names, but instead explore knowledge starting from concrete entities in the given question.
